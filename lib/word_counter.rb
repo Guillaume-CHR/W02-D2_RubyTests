@@ -11,7 +11,7 @@
 dictionary1 = ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are"]
 
 dictionary2=[]
-File.read("lib/swear_words_text.txt").each_line{|line| dictionary2 << line}
+File.read("lib/swear_words_text.txt").each_line{|line| dictionary2 << line.chomp}
 
 def word_counter(str,dictionary)
   hash ={}
