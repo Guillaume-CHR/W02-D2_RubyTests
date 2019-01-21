@@ -11,7 +11,6 @@
 dictionary = ["below", "down", "go", "going", "horn", "how", "howdy", "it", "i", "low", "own", "part", "partner", "sit"]
 def word_counter(str,dictionary)
   hash ={}
-  puts "\nThe string is #{str}"
   dictionary.each do |iDico|
     iSize = str.scan(/(?=#{iDico})/).size
     hash[iDico] = iSize if iSize > 0
